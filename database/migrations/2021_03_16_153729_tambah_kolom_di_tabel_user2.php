@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TambahKolomDiTabelUser extends Migration
+class TambahKolomDiTabelUser2 extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class TambahKolomDiTabelUser extends Migration
      */
     public function up()
     {
-        Schema::table('user', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->string('username',20)->after('id')->Nullable()->Unique();
         });
     }
